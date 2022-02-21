@@ -1,0 +1,137 @@
+.body{
+	max-width: 1600px;
+	min-height: 100vw;
+	align-content: center;
+}
+
+.button_container{
+	display: flex;
+	width: 100%;
+	height: 500px;
+	justify-content: center;
+}
+
+.button{
+	width: 235px;
+	height: 70px;
+	background-color: #ff0000;
+	color: #fff;
+	align-self: center;
+	font-size: 25px;
+}
+
+.popup_container{
+	display: none;
+	position: relative;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 330px;
+	width: 600px;
+	background-color: #fff;
+	border: solid #d0d0d0 2px;
+	border-radius: 5%;
+	padding: 20px 20px 0 20px;
+}
+
+.popup_container-title{
+	margin-bottom: 20px;
+}
+
+.popup_container-image{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.popup_container-form{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+}
+.button_container-img{
+	margin-bottom: 0;
+}
+
+.popup_container-form_title{
+	font-size: 13px;
+	margin: 0;
+}
+
+.input{
+	height: 25px;
+	border-radius: 5px;
+	border: solid #d0d0d0 2px;
+	margin-bottom: 20px;
+}
+
+.popup_form{
+	display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+}
+
+.popup_container-form-button{
+	background-color: #54e649;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 10px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px 2px #2aa821;
+	text-align: center;
+	line-height: 3;
+}
+
+.popup_container-form-close-button{
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: #fff;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+@media (max-width: 880px) {
+  .popup_container{
+
+  	width: 300px;
+  	height: auto;
+  	flex-direction: column;
+  }
+  .popup_container-image{
+  	flex-direction: column-reverse ;
+  }
+  .popup_container-image{
+  	width: 100%;
+  }
+  .popup_container-form{
+  	width: 100%;
+  	margin-top: 20px;
+  	padding: 0;
+  }
+  .popup_form{
+  	padding-left: 0;
+  }
+  .popup_container-title{
+  	text-align: center;
+  }
+  .button_container-icons{
+  	margin-top: -20px;
+  	z-index: 2;
+  }
+}

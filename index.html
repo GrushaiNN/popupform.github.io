@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Тестовое задание</title>
+</head>
+<body class="body">
+	<div class="button_container">
+		<button class="button" type="button" value="Click" onmousedown="popupOpen()">Кликни</button>
+	</div>
+	<div id="popup" class="popup_container">
+		<div class="popup_container-image">
+			<h2 class="popup_container-title">Получите набор файлов для руководителя:</h2>
+			<img class="button_container-icons" style="align-self: center;" width="80%" src="images/Office-Icons.png" alt="Иконки файлов">
+			<img class="button_container-img" width="100%" src="images/img.jpg" alt="Картинка">
+		</div>
+		<div class="popup_container-form">
+			<button class="popup_container-form-close-button" type="button" value="Click" onmousedown="popupClose()"> <img src="images/close_icon.png"> </button>
+			<form class="popup_form">
+				<h3 class="popup_container-form_title">Введите E-mail для получения файлов:</h3>
+				<input class="input" type="email" no-reqired name="email" placeholder="E-mail" >
+				<h3 class="popup_container-form_title">Введите телефон для подтверждения доступа:</h3>
+				<input class="input" type="" name="tel" pattern="(\+7(\(\d\d\d\))([0-9]{3}[-])([0-9]{2}[-])[0-9]{2})|(\+7(\(\d\d\d\))\s([0-9]{3}[-])([0-9]{2}[-])[0-9]{2})|(\+7\s([0-9]{3}[-])([0-9]{3}[-])([0-9]{2}[-])[0-9]{2})|(\+7[0-9]{10})|(8[0-9]{10})" minlength="" maxlength="12" placeholder="+7 (000) 000-00-00" required>
+				<button type="submit" class="popup_container-form-button"> <span style="line-height: 0; margin-bottom: 15px;">Скачать файлы</span> <img src="images/hand-icon.png" width="30px"> </button>
+				<h3 style="font-size: 9px; align-self: center; color: #d0d0d0 2px;">PDF 4.7MB   DOC 0.8MB   XLS 1.2MB</h3>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
